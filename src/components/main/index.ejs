@@ -1,0 +1,142 @@
+
+
+<main>
+    <div class="homepage">
+        <!-- LEVEL NAVIGATION -->
+        <%- include(
+            './components/level-navigations.ejs',
+            {
+                navigation: [
+                    'Level 1 /', 
+                    ' Level 2 /', 
+                    ' Level 3 ' ,
+                ],
+            }
+        )-%>
+
+        <h1>All plants</h1>
+
+        <!-- FILTER -->
+        
+        <%- include(
+            './components/filter.ejs', {
+                filter: [
+                    {
+                    btnClass: 'sort',
+                    btmName: 'Sort by', 
+                    },
+                    {
+                    btnClass: 'color',
+                    btmName:   'Color',
+                    },
+                    { 
+                    btnClass: 'price',
+                    btmName:   'Price',
+                    },
+                    {
+                    btnClass: 'type',
+                    btmName:   'Flower type',
+                    },
+                    {
+                    btnClass: 'occasion',
+                    btmName:   'Occasion',
+                    },     
+                ],
+            } 
+        )-%>
+
+        <!-- DROPDOWNS LISTS -->        
+
+        <%- include(
+            './components/ul-dropdowns.ejs', {
+                dropdown: [
+                    {
+                    lists: ['Color flowers', 'Type flowers', 'Price flowers', 'Adress magazin', 'Free'],
+                    className: 'position',
+                    },
+                    {
+                    lists: ['Blue','Yalow', 'Pink', 'Black', 'White','Red'],
+                    className: 'position1',
+                    },
+                    { 
+                    lists: ['10-20$', '20-30$', '30-40$', '40-50$', '50-60$'],
+                    className: 'position2',
+                    },
+                    {
+                    lists:['Rose', 'Anemone', 'Aster', 'Carnation', 'Clematis','Crocus'],
+                    className: 'position3',
+                    },
+                    {
+                    lists: ['Birthday', 'Anniversary', 'New Year', 'Wedding'],
+                    className: 'position4',
+                    },
+                    ],
+                }
+            )-%>
+        <!-- LINE -->
+        <hr text-align="left">
+        <!-- CARDS -->
+        <%- include(
+            './components/card.ejs', {
+                cards: [
+                    {
+                    urlImg: 'https://garden.tomsk.ru/image/data/flowers/bukety/standart/buket_krasivyi%20(1).jpg',             
+                    name: 'Rose',
+                    price: '42$',
+                    priceS: '51$',
+                    },
+                    {
+                    urlImg: 'https://garden.tomsk.ru/image/cache/data/flowers/podarki/krasivyi_buket_v_kraft_pakete%20(2)-750x750.jpg',            
+                    name: 'Rose 1',
+                    price: '32$',
+                    priceS: '41$',
+                    },
+                    {
+                    urlImg: 'https://daricvety.com/upload/iblock/27d/27dd552baed30a81e3a765dc102f34ee.jpg',           
+                    name: 'Rose 2',
+                    price: '41$',
+                    priceS: '44$',
+                    },
+                    {
+                    urlImg: 'https://art-flo.ru/image/cache/catalog/915-%282%29-1000x1000.jpg',             
+                    name: 'Rose 3',
+                    price: '32$',
+                    priceS: '46$',
+                    },
+                    {
+                    urlImg: 'https://роза-мимоза.рф/image/cache/catalog/product/rose3/31879501_1621340677934489_5461034407009714176_n-1000x1000.jpg',              
+                    name: 'Rose 4',
+                    price: '22$',
+                    priceS: '31$',
+                    },
+                    {
+                    urlImg: 'https://vjoy.cc/wp-content/uploads/2019/07/20-4.jpg',             
+                    name: 'Rose 5',
+                    price: '45$',
+                    priceS: '65$',
+                    },
+                    {
+                    urlImg: 'https://shumgam.ru/wp-content/uploads/3/e/2/3e248fe98475ad2c8e7ffe87e1489b29.jpg',              
+                    name: 'Rose 6',
+                    price: '33$',
+                    priceS: '45$',
+                    },
+                    {
+                    urlImg: 'https://anons.uz/media/uploads/2020/03/02/88346887_1647549152062429_2468747919000338432_o.jpg',              
+                    name: 'Rose 7',
+                    price: '32$',
+                    priceS: '39$',
+                    },
+                    
+                ],
+            }
+        )-%>
+
+        <!-- BUTTON See More-->
+
+        <section class="see-more">
+            <button class="btn-main">See more</button>
+        </section>
+        
+    </div>
+</main>

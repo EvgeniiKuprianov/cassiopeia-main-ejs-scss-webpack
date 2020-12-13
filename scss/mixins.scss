@@ -1,0 +1,14 @@
+@mixin flexibleCenter () {
+    display: flex;
+    justify-content: center;
+  }
+
+@mixin flexibleBetween () {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexibleNone () {
+  border: none;
+  outline: none;
+}

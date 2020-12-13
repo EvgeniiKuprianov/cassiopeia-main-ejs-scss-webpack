@@ -1,0 +1,9 @@
+<% dropdown.forEach(list => { %>
+        <ul class="ul-dropdown <%= list.className %>">
+        <% list.lists.forEach(element => { %>
+            <li><%= element %></li>
+        <% }); %>
+        </ul>
+<% }); %>
+
+

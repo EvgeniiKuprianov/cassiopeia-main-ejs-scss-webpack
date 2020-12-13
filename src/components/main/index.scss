@@ -1,0 +1,199 @@
+html {
+    @include flexibleCenter ();
+    background: #F2F2F2;
+}
+
+main {
+    font-weight: $fatText;   
+}
+
+a,
+a:hover {
+    color: black;
+}
+
+
+.homepage {
+    padding: 0 140px;
+
+    .navigation-level {
+        height: 35px;
+        padding-bottom: 60px;
+        margin-left: -10px;
+    
+        .level-link {
+            padding-left: 10px;
+        }
+    }
+
+    .button-filter {
+        padding-top: 45px;
+        display: flex;
+        justify-content: space-around;
+
+        .categories,
+        
+        .categories:active,
+        .categories:focus {
+            @include flexibleNone();
+            background-color: $backgroundWhite;
+            
+        }
+
+        .categories:hover {
+        text-decoration: underline;
+
+        }
+    }
+
+    hr {
+        width: 1160px;
+        margin-left: 0;
+    }
+}
+
+// TEXTS LIST 
+
+.position,
+.position1,
+.position2,
+.position3,
+.position4 {
+    z-index: 100;
+    position: absolute;
+    display: none;
+    background: $backgroundLightGrey;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.position {
+    margin-left: 20px;
+}
+.position1 {
+    margin-left: 250px;
+}
+.position2 {
+    margin-left: 480px;
+}
+.position3 {
+    margin-left: 705px;
+}
+.position4 {
+    margin-left: 935px;
+}
+
+.ul-dropdown {
+    
+    li {
+    width: 200px;
+    }
+
+    li:hover {
+    background-color: blanchedalmond;
+    }
+}
+
+// BUTTONS ON IMG
+
+.on-img {
+    position: absolute;
+    margin: -60px 0;
+    width: 260px;
+    text-align: center;
+}
+
+.btn-icon {
+    background-color: $backgroundWhite;
+    @include flexibleNone();
+    border-radius: 4px;
+    display: none;
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+    @include flexibleNone();
+    background-color: $backgroundWhite;
+    border-radius: 4px;
+
+}
+
+
+
+/* CARDS FLOWER CONTAINER */
+
+.container {
+    max-width: 1165px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    .card {
+        @include flexibleNone();
+        height: 368px;
+        width: 260px;
+    
+        .img-size {
+            height: 260px;
+            width: 260px;
+            margin-top: -1px;
+            margin-left: -1px;
+            border-radius: 10px;
+        }
+
+        s {
+            color: lightgrey;
+        }
+    
+        .price-name-padding {
+            padding: 10px 0px 0px 10px;
+        }
+    }
+}
+
+.card:hover {
+    transition: 1s;
+    transform: scale(1.2);
+    display: unset;
+
+    .btn-icon {
+    display: unset;
+    }
+
+    .btn-icon:hover {
+    box-shadow: 0 0 0 4px rgba(51, 11, 230, 0.411);
+    }
+}
+
+.bottom-margin {
+    margin-bottom: 41px;
+}
+
+.see-more {
+    @include flexibleCenter ();
+    margin: 40px 0 100px 0;
+
+    .btn-main {
+        font-size: 14px;
+        color: white;
+        width: 223px;
+        height: 46px;
+        background: black;
+        border-radius: 4px;   
+        outline: none;
+        border: none;
+    }
+
+    .btn-main:hover {
+        border-radius: 4px;  
+        background:white;
+        color: black;
+        box-shadow: 0 0 0 2px rgba(51, 11, 230, 0.411);
+    }
+    .btn-main:focus {
+        outline: none;
+        border: none;
+    }
+}
