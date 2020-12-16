@@ -2,9 +2,13 @@
     width: 1440px;
     height: 131.5px;
     padding: 20px 140px;
-    font-weight: $fatText;
+    font-family: Roboto;
 
     .topbar {
+        .main-title {
+        font-size: 20px;
+        }
+
         @include flexibleBetween();
         height: 62px;
         margin-top: -10px;
@@ -21,7 +25,7 @@
         }
 
         .top-btn:hover {
-            box-shadow: 0 0 0 2px rgba(51, 11, 230, 0.411);
+            box-shadow: 0 0 3px red;
         }
 
         .top-btn:focus {
@@ -31,6 +35,7 @@
     }      
 
     .navigation-items {
+        font-size: 16px;
         @include flexibleCenter ();
 
         .page-links {

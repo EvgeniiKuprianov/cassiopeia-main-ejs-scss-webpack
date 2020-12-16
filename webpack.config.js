@@ -24,6 +24,17 @@ module.exports = {
         }
       },
       {
+        test: /\.ttf$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: './fonts/[hash].[ext]',
+            },
+          },
+        ]
+      },
+      {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },

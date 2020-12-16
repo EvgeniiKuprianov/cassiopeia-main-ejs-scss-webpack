@@ -1,9 +1,9 @@
-<article class="container">   
+
+<section class="page4 none">  
     <% cards.map(card => { %>
             <section class="card bottom-margin">
                 <section class="img-container">
-                    <img class="img-size"
-                        src="<%= card.urlImg %>">
+                    <img class="img-size" src="<%= card.urlImg %>">
                     <section class="on-img">
                         <button class="btn-icon"><img src="./img/sharpe.jpg"></button>
                         <button class="btn-icon"><img src="./img/search.jpg"></button>
@@ -13,4 +13,4 @@
                 <h5 class="price-name-padding"><%= card.price %> <s><%= card.priceS %></s></h5>
             </section>
             <% }); %> 
-        </article>
+        </section>

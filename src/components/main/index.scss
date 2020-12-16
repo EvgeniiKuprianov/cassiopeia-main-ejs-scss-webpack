@@ -3,8 +3,13 @@ html {
     background: #F2F2F2;
 }
 
-main {
-    font-weight: $fatText;   
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(./../fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+    font-family: Roboto;
 }
 
 a,
@@ -19,22 +24,32 @@ a:hover {
     .navigation-level {
         height: 35px;
         padding-bottom: 60px;
-        margin-left: -10px;
     
-        .level-link {
-            padding-left: 10px;
+        .level {
+            font-size: 12px;
+            background-color: white;
+            border: none;
         }
+        
+        .level:active,
+        .level:focus {
+            color: red;
+            outline: none;
+            border: none;
+        }
+        
     }
 
     .button-filter {
+        font-size: 14px;
         padding-top: 45px;
         display: flex;
         justify-content: space-around;
 
         .categories,
-        
         .categories:active,
         .categories:focus {
+            font-size: 14px;
             @include flexibleNone();
             background-color: $backgroundWhite;
             
@@ -84,6 +99,7 @@ a:hover {
 }
 
 .ul-dropdown {
+    font-size: 14px;
     
     li {
     width: 200px;
@@ -117,8 +133,6 @@ a:hover {
 
 }
 
-
-
 /* CARDS FLOWER CONTAINER */
 
 .container {
@@ -128,6 +142,26 @@ a:hover {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+
+    .page2,
+    .page3,
+    .page4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    }
+
+    .none {
+    display: none;
+    }
+
+    .page1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    }
 
     .card {
         @include flexibleNone();
@@ -139,7 +173,7 @@ a:hover {
             width: 260px;
             margin-top: -1px;
             margin-left: -1px;
-            border-radius: 10px;
+            border-radius: 7px;
         }
 
         s {
@@ -162,7 +196,7 @@ a:hover {
     }
 
     .btn-icon:hover {
-    box-shadow: 0 0 0 4px rgba(51, 11, 230, 0.411);
+    box-shadow: 0 0 3px red;
     }
 }
 
@@ -189,7 +223,7 @@ a:hover {
         border-radius: 4px;  
         background:white;
         color: black;
-        box-shadow: 0 0 0 2px rgba(51, 11, 230, 0.411);
+        box-shadow: 0 0 3px red;
     }
     .btn-main:focus {
         outline: none;

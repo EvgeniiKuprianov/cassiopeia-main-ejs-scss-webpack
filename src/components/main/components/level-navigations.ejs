@@ -1,5 +1,5 @@
 <nav class="navigation-level">
-            <% navigation.forEach(navigationItem => { %>
-            <a href="" class="level-link"><%= navigationItem %></a>
+            <% navigation.forEach(item => { %>
+            <button class="level <%= item.btnClass %>"><%= item.btnName %></button>
             <% }) %>
         </nav>
